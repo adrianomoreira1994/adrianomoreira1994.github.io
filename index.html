@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Template</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 30000px;
+        padding-top: 120px;
+      }
+
+      .content {
+        padding: 10px;
+        max-width: 960px;
+        margin: 0 auto;
+        /* background-color: red; */
+      }
+
+      .container-logo {
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .container-logo > img {
+        align-content: center;
+        max-width: 420px;
+        margin-top: 15px;
+      }
+
+      .page-title {
+        text-align: right;
+        width: 100%;
+        text-transform: uppercase;
+      }
+
+      .header-bottom {
+        text-align: center;
+        margin: 40px auto;
+      }
+
+      .header-bottom h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+      }
+
+      .box {
+        background-color: #f5f5f5;
+        max-width: 768px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+      }
+
+      .dados-empresa {
+        text-align: center;
+      }
+
+      .top {
+        padding: 25px 0;
+      }
+
+      .top .nome-empresa {
+        font-size: 22px;
+      }
+
+      .top .cnpj {
+        margin-top: 5px;
+      }
+
+      .bottom {
+        padding: 25px 0;
+      }
+
+      .bottom .valor {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .bottom .data-pedido,
+      .data-pedido strong {
+        font-size: 15px;
+      }
+
+      .beneficios {
+        padding: 30px 25px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .beneficios .left p {
+        margin-bottom: 15px;
+        font-weight: bold;
+        margin-top: 3px;
+        color: #c3c3c3;
+      }
+
+      .beneficios .right h3 {
+        margin-bottom: 15px;
+        color: #c3c3c3;
+      }
+
+      .beneficios .right ul li {
+        margin-bottom: 15px;
+        color: #c3c3c3;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <header>
+          <p class="page-title"><strong>Recarga:</strong> 221391</p>
+          <div class="container-logo">
+            <img
+              src="https://wiipo.com/wp-content/uploads/2020/04/wiipo-logo.png"
+              alt="Wiipo Flex"
+              title="Wiipo Flex"
+            />
+          </div>
+
+          <aside class="header-bottom">
+            <h1>Relatório de Pedido de Recarga</h1>
+            <p>Pagamento de Benefícios para os Colaboradores</p>
+          </aside>
+        </header>
+
+        <div class="dados-empresa box">
+          <div class="top">
+            <h2 class="nome-empresa">Petroleo Brasileiro S.A</h2>
+            <p class="cnpj"><strong>CNPJ:</strong> 33.000.167/1049-00</p>
+          </div>
+          <hr />
+          <div class="bottom">
+            <p class="valor">R$5.000,00</p>
+            <div class="data-pedido">
+              <strong>pedido feito em</strong> 05/05/2022
+            </div>
+          </div>
+        </div>
+
+        <div class="box beneficios">
+          <div class="left">
+            <h3>Soma dos benefícios</h3>
+            <p>R$ 5.000,00</p>
+            <h3>Custo total de serviços:</h3>
+            <p>R$ 0,00</p>
+            <h3>Total de beneficiários:</h3>
+            <p>4</p>
+            <h3>Disponibilização do benefício:</h3>
+            <p>08/05/2022</p>
+          </div>
+          <div class="right">
+            <h3>Discriminação dos benefícios para finalidade fiscal:</h3>
+
+            <ul>
+              <li>Compra de benefícios - Vale Refeição: R$ 500,00</li>
+              <li>Compra de benefícios - Vale Alimentação: R$ 200,00</li>
+              <li>Compra de benefícios - Saúde: R$ 1.000,00</li>
+              <li>Compra de benefícios - Cultura e Lazer: R$ 1.000,00</li>
+              <li>Compra de benefícios - Mobilidade: R$ 500,00</li>
+              <li>Compra de benefícios - Livre: R$ 1.300,00</li>
+            </ul>
+          </div>
+        </div>
+
+        <table style="width: 100%; margin: 60px auto 0 auto; max-width: 768px">
+          <thead class="thead">
+            <tr style="text-align: center; height: 60px">
+              <th style="text-align: center; height: 60px">Nome</th>
+              <th style="text-align: center; height: 60px">CPF</th>
+              <th style="text-align: center; height: 60px">Benefício</th>
+              <th style="text-align: center; height: 60px">Total</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody">
+            {tableHTMLCode}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
