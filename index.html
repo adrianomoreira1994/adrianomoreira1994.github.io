@@ -130,7 +130,7 @@
     <div class="container">
       <div class="content">
         <header>
-          <p class="page-title"><strong>Recarga:</strong> 221391</p>
+          <p class="page-title"><strong>Recarga:</strong> {IdRecarga}</p>
           <div class="container-logo">
             <img
               src="https://wiipo.com/wp-content/uploads/2020/04/wiipo-logo.png"
@@ -147,14 +147,14 @@
 
         <div class="dados-empresa box">
           <div class="top">
-            <h2 class="nome-empresa">Petroleo Brasileiro S.A</h2>
-            <p class="cnpj"><strong>CNPJ:</strong> 33.000.167/1049-00</p>
+            <h2 class="nome-empresa">{NomeEmpresa}</h2>
+            <p class="cnpj"><strong>CNPJ:</strong> {Cnpj}</p>
           </div>
           <hr />
           <div class="bottom">
-            <p class="valor">R$5.000,00</p>
+            <p class="valor">R${ValorTotal}</p>
             <div class="data-pedido">
-              <strong>pedido feito em</strong> 05/05/2022
+              <strong>pedido feito em</strong> {DataPedido}
             </div>
           </div>
         </div>
@@ -162,24 +162,19 @@
         <div class="box beneficios">
           <div class="left">
             <h3>Soma dos benefícios</h3>
-            <p>R$ 5.000,00</p>
+            <p>R$ {TotalBeneficio}</p>
             <h3>Custo total de serviços:</h3>
-            <p>R$ 0,00</p>
+            <p>R$ {CustoTotalServico}</p>
             <h3>Total de beneficiários:</h3>
-            <p>4</p>
+            <p>{TotalDeBeneficio}</p>
             <h3>Disponibilização do benefício:</h3>
-            <p>08/05/2022</p>
+            <p>{DataDisponibilidadeBeneficio}</p>
           </div>
           <div class="right">
             <h3>Discriminação dos benefícios para finalidade fiscal:</h3>
 
             <ul>
-              <li>Compra de benefícios - Vale Refeição: R$ 500,00</li>
-              <li>Compra de benefícios - Vale Alimentação: R$ 200,00</li>
-              <li>Compra de benefícios - Saúde: R$ 1.000,00</li>
-              <li>Compra de benefícios - Cultura e Lazer: R$ 1.000,00</li>
-              <li>Compra de benefícios - Mobilidade: R$ 500,00</li>
-              <li>Compra de benefícios - Livre: R$ 1.300,00</li>
+              {ListaBeneficios}
             </ul>
           </div>
         </div>
